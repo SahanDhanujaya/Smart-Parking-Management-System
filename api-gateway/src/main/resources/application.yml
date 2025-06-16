@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  config:
+    import: optional:configserver:http://localhost:8888
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: vehicle-service
+              uri: lb://VEHICLE-SERVICE
+              predicates:
+                 - Path=/vehicle-service/**
+
+
+
+
