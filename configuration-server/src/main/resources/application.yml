@@ -1,11 +1,17 @@
 spring:
   application:
     name: configuration-server
-
   cloud:
+    compatibility-verifier:
+      enabled: false
     config:
       server:
-        git:
-          uri: https://github.com/SahanDhanujaya/Smart-Parking-Management-System.git
+        native:
+          search-locations: configuration-server/src/main/resources/config
+  profiles:
+    active: native
+
 server:
   port: 8888
+
+

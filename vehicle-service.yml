@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: vehicle-service
+
+server:
+  port: 8081
+
+custom:
+  message: hello from config server

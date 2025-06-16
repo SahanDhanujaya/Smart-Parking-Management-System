@@ -1,10 +1,10 @@
-package lk.ijse.eurekaserver;
+package lk.ijse.vehicleservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaServerApplicationTests {
+class VehicleServiceApplicationTests {
 
     @Test
     void contextLoads() {

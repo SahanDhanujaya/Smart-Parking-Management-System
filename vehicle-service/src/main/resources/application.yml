@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: vehicle-service
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  config:
+    import: optional:configserver:http://localhost:8888
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+server:
+  port: 8081
