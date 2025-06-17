@@ -17,9 +17,11 @@ spring:
         webflux:
           routes:
             - id: vehicle-service
-              uri: lb://VEHICLE-SERVICE
+              uri: http://localhost:8081
               predicates:
-                 - Path=/vehicle-service/**
+                - Path=/vehicle-service/**
+
+
 
 
 
