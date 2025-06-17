@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @ProjectDetails SPMS
  */
 @RestController
-@RequestMapping("api/v1/vehicle")
+@RequestMapping("/vehicle")
 public class VehicleController {
 
     @Value("${custom.message}")
