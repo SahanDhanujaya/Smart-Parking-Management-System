@@ -5,8 +5,20 @@ spring:
     password: 95334238Sd$
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
 custom:
   message: hello from config server
+
+server:
+  port: 8081
+
+  servlet:
+    context-path: /vehicle-service
 
 eureka:
   client:

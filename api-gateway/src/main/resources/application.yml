@@ -22,11 +22,19 @@ spring:
                 - Path=/vehicle-service/**
 
             - id: user-service
-              uri: htp://localhost:8082
+              uri: htp://localhost:8083
               predicates:
                 - Path=/user-service/**
 
+            - id: parking-service
+              uri: htp://localhost:8082
+              predicates:
+                - Path=/parking-service/**
 
+            - id: payment-service
+              uri: htp://localhost:8084
+              predicates:
+                - Path=/payment-service/**
 
 
 
