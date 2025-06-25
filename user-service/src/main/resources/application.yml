@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: user-service
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+
+
+  config:
+    import: optional:configserver:http://localhost:8888/
